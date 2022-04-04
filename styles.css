@@ -71,6 +71,10 @@ ul {
 		flex-direction: column;
 		align-items: center;
 		margin: 0 auto;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}​
 }
 
 @media (min-width: 1025px) {
@@ -137,6 +141,15 @@ color: #f79b7c;
     height: 400px;
     border: bold white 2px;
     justify-content: center;
+    align-items: center;
+}
+
+.rockPaperScissors {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 250px;
+  border-radius: 10px;
 }
 
 
