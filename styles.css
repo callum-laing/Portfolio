@@ -146,10 +146,11 @@ a {
 }
 
 .me {
-    border-radius: 50%;
+    border-radius: 10%;
     width: 15em;
     height: 15em;
     order: 0;
+	box-shadow: 5px 5px;
 }
 
 .skills, .intro {
