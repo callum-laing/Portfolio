@@ -10,6 +10,9 @@ body {
   background-color: #171717;
 }
 
+img {
+  max-width: 95vw;
+}
 
 
 /* Navbar */
@@ -51,7 +54,7 @@ a {
 
 .main-nav a {
 	color: #aaf7a8;
-	font-size: .99em;
+	font-size: .70em;
 }
 
 .main-nav a:hover {
@@ -64,6 +67,7 @@ a {
   font-weight: bold;
   border-radius: 5px;
 }
+
 
 .fa {
   margin-right: 2px;
@@ -84,7 +88,6 @@ a {
 }
 
 
-
 /* ================================= 
   Media Queries
 ==================================== */
@@ -102,6 +105,12 @@ a {
 		align-items: center;
 		width: 100%;
       }
+      .skill, .intro{
+        margin-left: 20px;
+      }
+      .icons {
+        margin-left: 50px;
+      }
 	}
 
 @media (min-width: 1025px) {
@@ -116,6 +125,18 @@ a {
 
 /* About */
 
+@media (max-width: 769px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .me {
+    display: none;
+  }
+}
+
+
 .about {
     display: flex;
    margin-top: 200px;
@@ -126,20 +147,18 @@ a {
 
 .me {
     border-radius: 50%;
-    width: 20em;
-    height: 20em;
+    width: 15em;
+    height: 15em;
     order: 0;
 }
 
 .skills, .intro {
     order: 1;
-    margin-left: 20px;
     font-size: 24px;
-   
 }
 
 .callum {
-font-size: 4rem;
+font-size: clamp(2rem, 4vw, 4rem);
 font-weight: bold;
 color: #faeda2;
 margin-bottom: 0;
@@ -154,10 +173,8 @@ color: #f79b7c;
     height: 50px;
     width: 50px;
     align-items: center;
-    margin-left: 50px;
+    margin: 0 20px;
 }
-
-
 
   /* Projects */
 .projects {
