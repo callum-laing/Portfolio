@@ -14,6 +14,10 @@ img {
   max-width: 95vw;
 }
 
+section {
+  height: 100vh;
+}
+
 
 /* Navbar */
 ul {
@@ -83,8 +87,9 @@ a {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-  position: fixed;
+  position: sticky;
   top: 0;
+  background-color: #171717;
 }
 
 
@@ -121,12 +126,8 @@ a {
 
 }
 
-
-
-/* About */
-
 @media (max-width: 769px) {
-  .about {
+  .home {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -136,21 +137,36 @@ a {
   }
 }
 
+/* Home 1st Section*/
 
-.about {
-    display: flex;
-   margin-top: 200px;
+.waves {
+  position: absolute;
+  z-index: -1;
+  margin-top: 450px;
+}
+
+.wavesTwo {
+  position: absolute;
+  z-index: -1;
+  transform: scaleY(-1);
+  
+}
+
+.home {
+   display: flex;
+   margin-top:27vh;
    margin-left: auto;
    margin-right: auto;  
-    justify-content: center;
+   justify-content: center;
 }
 
 .me {
-    border-radius: 10%;
-    width: 15em;
-    height: 15em;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
     order: 0;
-	box-shadow: 5px 5px;
+    box-shadow: 2px 2px;
+    margin-left: 10px;
 }
 
 .skills, .intro {
@@ -174,14 +190,22 @@ color: #f79b7c;
     height: 50px;
     width: 50px;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 35x;
 }
 
-  /* Projects */
+
+/* About 2nd Section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 600px;
+  color: white;
+}
+
+  /* Projects 3rd Section */
 .projects {
     display: flex;
-    width: 100%;
-    height: 100rem;
     border: bold white 2px;
     justify-content: center;
     align-items: center;
@@ -196,16 +220,19 @@ color: #f79b7c;
 }
 
 
-/* Contact */
-
+/* Contact 4th Section*/
+.contact {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 200px;
+}
 
 
 
   /* Footer */
 .footer {
     display: flex;
-    width: 100%;
-    height: 400px;
     border: bold white 2px;
     justify-content: center;
 }
