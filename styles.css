@@ -169,6 +169,14 @@ a {
  top: 25%;
 }
 
+.intro-title {
+color: white;
+}
+
+.intro-text {
+  color: white;
+  width: 20rem;
+}
 
 
   /* Projects 3rd Section */
