@@ -16,9 +16,16 @@
   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+
+
+    <body>
+
 
     <header class="navbar">
       <div class="main-nav">
@@ -29,41 +36,55 @@
 	</header> 
 
 
+    <div class="container">
 <section class="home" id="home">
-  <div class="intro">
-      <h1 class="hello">Hello.</h1>
-      <h1 class="callum"> I'm Callum</h1>
-      <h4 class="job-title">Front-End Developer based in Cambridge, UK.<h4>
-      
+      <div class="intro">
+        <h1 id="callum">Hello, I'm Callum.</h1>
+        <h4 id="job-title">Front-End Web Developer</h4>
+      </div>
+        </section>
 <!--<div>
       <img class="icons skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"/>
       <img class="icons skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"/>
       <img class="icons skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
       <img class="icons skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
   </div> -->
-</section>
 
-<section class="about">
+<!--<section class="about">
     <h2 class="intro-title">About me:</h2>
     <p class="intro-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-</section>
+</section>-->
 
 <section id="projects" class="projects">
-    <a class="bottom" id="rps" href="https://laing91.github.io/rock-paper-scissors/">
-        <img class="rockPaperScissors" src="./images/rps.JPG" alt="Rock, Paper, Scissors">
-    </a>
+    <div class="rps">
+    </div>
+    <div>
+        <img src="./images/rps.JPG" alt="">
+        <h4>2022 - HTML, CSS, JS - Browser Based Game</h4>
+    </div>
+</section>
 </section>
 
-<section class="contact" id="contact">
-
-<div>
-
-
-
-</div>
-
-</section>
-</div>
+<div class="contact" id="contact">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="email">Email</label>
+      <input type="text" id=""email" name="email" placeholder="Your email..."">
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
 
 <script src="app.js"></script>
 </body>
