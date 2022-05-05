@@ -78,7 +78,6 @@ a {
 ==================================== */
 
 @media (min-width: 769px) {
-  .header,
   .main-nav {
     display: flex;
   }
@@ -141,6 +140,7 @@ a {
   font-size: 0.5em;
   margin-left: 15vh;
 }
+
 
 /* About 2nd Section */
 
