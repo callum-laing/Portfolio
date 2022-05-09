@@ -65,7 +65,7 @@ a {
 }
 
 .main-nav a {
-  color: #FFFFFF99;
+  color: white;
   font-size: 0.7em;
 }
 
@@ -134,11 +134,12 @@ a {
 }
 
 #job-title {
+  display: flex;
+  justify-content: center;
   color: white;
   margin-top: 0;
   font-family: arial;
   font-size: 0.5em;
-  margin-left: 15vh;
 }
 
 
