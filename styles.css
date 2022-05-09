@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .mainContainer {
@@ -35,6 +36,17 @@ body {
   margin: 0 auto;
 }
 
+h2 {
+  color: #faeda2;
+}
+
+p {
+  color: white;
+}
+
+section {
+  height: 100vh;
+}
 /* ================================= 
    Navbar 
  ==================================== */
@@ -47,7 +59,7 @@ body {
   font-family: raleway;
 }
 
-a {
+.home-nav, .projects-nav, .contact-nav, .about-nav {
   text-decoration: none;
 }
 
@@ -108,6 +120,19 @@ a {
     text-align: center;
     padding-bottom: 400px;
   }
+  .projectIntro, .aboutMe {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  h2, .rps, .projectIntro, .aboutMe {
+    display: flex;
+    justify-content: center;
+  } 
+  .aboutMe {
+    max-width: 95vw;
+    padding-right: 30px;
+  }
+
 }
 
 /* ================================= 
@@ -120,7 +145,6 @@ a {
   color: #faeda2;
   margin-bottom: 0;
   padding-top: 15vh;
-  height: 100vh;
   font-family: "raleway";
 }
 
@@ -143,26 +167,72 @@ a {
 }
 
 
-/* About 2nd Section */
+/* ================================= 
+  About
+==================================== */
+.about {
+  display: flex;
+  flex-direction: space-between;
+  margin-top: 30vh;
+  padding-top: 20vh;
+}
 
-/* Projects 3rd Section */
+.aboutMe {
+  width: 45%;
+  margin-right: 50px;
+}
+/*.skills {
+  width: 50px;
+  height: 50px;
+}*/
+
+.mySkills {
+  margin-left: 50px;
+width: 45%;
+}
+
+.skills {
+  width: 5%;
+  margin-left: 50px;
+}
+
+
+/* ================================= 
+  Projects
+==================================== */
+
 .projects {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  flex-direction: column;
+  padding-top: 20vh;
+  width: 50%;
+  margin: 0 auto;
 }
 
+
 img {
+  margin-top: 20px;
   border-radius: 3%;
+}
+
+.projectIntro {
+  color: white;
+}
+.projectIntroText {
+  color: #faeda2;
 }
 
 h4 {
   display: flex;
   text-align: center;
+  color: white;
 }
 
-/* Contact 4th Section*/
+/* ================================= 
+  Contact
+==================================== */
 input[type="text"],
 select,
 textarea {
@@ -195,9 +265,12 @@ input[type="submit"]:hover {
 
 .contact {
   border-radius: 5px;
-  padding: 20px;
   max-width: 600px;
   margin: 0 auto;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Footer */
