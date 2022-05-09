@@ -59,7 +59,7 @@ section {
   font-family: raleway;
 }
 
-.home-nav, .projects-nav, .contact-nav, .about-nav {
+.home-nav, .projects-nav, .contact-nav, .about-nav, .skills-nav {
   text-decoration: none;
 }
 
@@ -118,13 +118,13 @@ section {
   .home {
     flex-direction: column;
     text-align: center;
-    padding-bottom: 400px;
+    padding-bottom: 600px;
   }
   .projectIntro, .aboutMe {
     margin-left: 20px;
     margin-right: 20px;
   }
-  h2, .rps, .projectIntro, .aboutMe {
+  h2, .rps, .projectIntro, .about {
     display: flex;
     justify-content: center;
   } 
@@ -173,20 +173,25 @@ section {
 .about {
   display: flex;
   flex-direction: space-between;
-  margin-top: 30vh;
-  padding-top: 20vh;
+  margin-top: 10vh;
+  padding-top: 15vh;
 }
 
 .aboutMe {
   width: 45%;
   margin-right: 50px;
 }
+
+/* ================================= 
+  Skills
+==================================== */
 /*.skills {
   width: 50px;
   height: 50px;
 }*/
 
 .mySkills {
+  padding-top: 20vh;
   margin-left: 50px;
 width: 45%;
 }
