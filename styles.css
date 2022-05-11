@@ -39,7 +39,6 @@ body {
 h2 {
   color: #faeda2;
   font-size: 2rem;
-  font-family: "bookman old style";
 }
 
 p {
@@ -130,7 +129,7 @@ section {
     margin-left: 20px;
     margin-right: 20px;
   }
-  h2, .rps, .projectIntro, .about {
+  h2, .rps, .projectIntro, .about  {
     display: flex;
     justify-content: center;
   } 
@@ -141,6 +140,9 @@ section {
   }
   .about {
     margin-top: 40vh;
+  }
+  .projects {
+    text-align: center;
   }
 }
 
