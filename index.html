@@ -51,16 +51,20 @@
 <!-- About section-->
 
 <section class="about" id="about">
-    <div class="aboutMe">
-        <h2 class="whoCallum">Who's Callum?</h2>
-    <p>I'm a Front-End Developer in Cambridge, UK.
-        I have a passion for creating intuitive, dynamic and responsive user experiences.
+        
+    <h2 class="item-a grid-col-span-2">Who's Callum?</h2>
+      <p class="item-b grid-col-span-2">I'm a Front-End Developer in Cambridge, UK.
+        I have a passion for creating intuitive, dynamic and responsive user experiences. 
+        <br>
+        <br>
+        I don't just code! I play American Football for the Cambridgeshire Cats, 
+        I love hiking, watching TV series (I have a weak spot for Kdramas and Anime) 
+        and am full time dad to a very fluffy Yorkshire Terrier.
     </p>
-    <p>A well-organised problem solver with great attention to detail. 
-        I'm a huge fan of Rugby, NFL, general outdoor activities, TV series and podcasts. 
-        As well as being dad to a very fluffy Yorkshire Terrier.
-    </p>
-    </div>
+    <img class="item-c" src="./images/callum.jpg" alt="">
+    <img class="item-d" src="./images/loch.jpg" alt="">
+    <img class="item-e" src="./images/nfl.jpeg" alt="">
+    <img class="item-f" src="./images/fleur.jpeg" alt="">
       <!--<img class="icons skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"/>
       <img class="icons skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"/>
       <img class="icons skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
@@ -73,7 +77,6 @@
 
     <div class="mySkills" id="skills">
         <h2>My Skills</h2>
-        <p>React</p>
         <p>JavaScript</p>
         <p>CSS</p>
         <p>HTML</p>
@@ -107,17 +110,17 @@
     method="POST">
   
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." class:required>
   
       <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." class:required>
   
       <label for="email">Email</label>
-      <input type="text" id=""email" name="email" placeholder="Your email..."">
+      <input type="text" id=""email" name="email" placeholder="Your email..." class:required>
       </select>
   
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
   
       <input type="submit" value="Submit">
   

@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  }
+  
 body {
   margin: 0;
   padding: 0;
@@ -181,17 +185,97 @@ section {
 /* ================================= 
   About
 ==================================== */
+/* .about {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header imgTl imgTr"
+  "main imgBl imgBr";
+  align-content: center;
+}
+
+.item-c, .item-d, .item-e, .item-f {
+  height: 20vh;
+  width: 20vh;
+}
+
+.item-a {
+  grid-area: header;
+}
+
+.item-b {
+  grid-area: main;
+}
+
+.item-c {
+  grid-area: imgTl;
+}
+
+.item-d {
+  grid-area: imgTr;
+}
+
+.item-e {
+  grid-area: imgBl;
+}
+
+.item-f {
+  grid-area: imgBr;
+} */
+
+.item-c, .item-d, .item-e, .item-f {
+  height: 20vh;
+  width: 20vh;
+}
+
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.25fr 1fr;
+
+  width: min(95%, 70rem);
+  margin-inline: auto;
+  padding-block: 2rem;
 }
 
-.aboutMe {
-  width: 50%;
+.grid-col-span-2 {
+  grid-column: span 2;
+  grid-row-end: span 2;
 }
 
+.item-a {
+  grid-column: span 2;
+  grid-row: 1;
+  align-content: end;
+  font-size: 3rem;
+}
+
+.item-b {
+  grid-column: span 2;
+  grid-row: 2;
+}
+.item-c {
+  grid-column: 3;
+  grid-row: 1;
+  border-radius: 100%;
+}
+.item-d {
+  grid-column: 4;
+  grid-row: 1;
+  border-radius: 100%;
+}
+.item-e {
+  grid-column: 3;
+  grid-row: 2;
+  border-radius: 100%;
+}
+.item-f {
+  grid-column: 4;
+  grid-row: 2;
+  border-radius: 100%;
+}
 /* ================================= 
   Skills
 ==================================== */
