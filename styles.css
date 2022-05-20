@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  letter-spacing: 1.5px;
   }
   
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 .mainContainer {
-  font-family: "raleway";
+  font-family: sans-serif;
   line-height: 1.6;
   margin: 0;
   min-height: 100vh;
@@ -41,8 +42,10 @@ body {
 }
 
 h2 {
-  color: #faeda2;
+  color: white;
   font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: #faeda2;
 }
 
 p {
@@ -150,6 +153,7 @@ section {
   }
 }
 
+
 /* ================================= 
   Home
 ==================================== */
@@ -185,59 +189,16 @@ section {
 /* ================================= 
   About
 ==================================== */
-/* .about {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "header imgTl imgTr"
-  "main imgBl imgBr";
-  align-content: center;
-}
-
-.item-c, .item-d, .item-e, .item-f {
-  height: 20vh;
-  width: 20vh;
-}
-
-.item-a {
-  grid-area: header;
-}
-
-.item-b {
-  grid-area: main;
-}
-
-.item-c {
-  grid-area: imgTl;
-}
-
-.item-d {
-  grid-area: imgTr;
-}
-
-.item-e {
-  grid-area: imgBl;
-}
-
-.item-f {
-  grid-area: imgBr;
-} */
-
-.item-c, .item-d, .item-e, .item-f {
-  height: 20vh;
-  width: 20vh;
-}
 
 .about {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 0.75fr 1fr;
   grid-template-rows: 0.25fr 1fr;
+  padding-top: 20vh;
 
   width: min(95%, 70rem);
   margin-inline: auto;
-  padding-block: 2rem;
 }
 
 .grid-col-span-2 {
@@ -245,10 +206,15 @@ section {
   grid-row-end: span 2;
 }
 
+.item-c, .item-d, .item-e, .item-f {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+}
+
 .item-a {
   grid-column: span 2;
   grid-row: 1;
-  align-content: end;
   font-size: 3rem;
 }
 
@@ -259,22 +225,18 @@ section {
 .item-c {
   grid-column: 3;
   grid-row: 1;
-  border-radius: 100%;
 }
 .item-d {
   grid-column: 4;
   grid-row: 1;
-  border-radius: 100%;
 }
 .item-e {
   grid-column: 3;
   grid-row: 2;
-  border-radius: 100%;
 }
 .item-f {
   grid-column: 4;
   grid-row: 2;
-  border-radius: 100%;
 }
 /* ================================= 
   Skills
@@ -284,6 +246,80 @@ section {
   height: 50px;
 }*/
 
+.skills-container,
+.skills-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills-title {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills-container,
+.skills-title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-container,
+.skills-title,
+.skills-container,
+.skills-title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills {
+  height: 100%;
+} *
+
+.devicons {
+  color: black;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3,
+.skills p {
+  font-weight: lighter;
+}
+
+.skills-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 6% auto;
+}
+
+.skills-title {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.skills-title span {
+  font-size: 6.5rem;
+}
+
+.skills-title span:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #faeda2;
+}
+
+.skills-title p {
+  text-align: center;
+  font-size: 1.5rem;
+}
 .mySkills {
   display: flex;
   justify-content: center;
@@ -293,10 +329,6 @@ section {
   
 }
 
-.skills {
-  width: 5%;
-  margin-left: 50px;
-}
 
 
 /* ================================= 
