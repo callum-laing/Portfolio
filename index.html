@@ -41,8 +41,7 @@
 
 <body>
       <nav class="navbar">
-        <label for="hamburger">Three Lines</label>
-  <input type="checkbox" id="hamburger">
+        <button onclick="toggleNavbar()" id="hamburgerButton">MENU</button>
         <div class="main-nav">
           <a href="#top" class="home-nav"><i class="fa fa-fw fa-home"></i>Home</a>
           <a href="#about" class="about-nav"><i class="fa fa-fw fa-address-book"></i>About</a>
@@ -58,10 +57,8 @@
 
       <div class="container">
         <section>
-          
             <h1>Hello, I'm Callum.</h1>
             <h4>Front-End Web Developer</h4>
-        
         </section>
 
         <!-- About section -->
@@ -76,15 +73,14 @@
             I love hiking, watching TV series (I have a weak spot for Kdramas and Anime)
             and am full time dad to a very fluffy Yorkshire Terrier.
           </p>
-      </div>
       <div class="image-container">
         <div>
-          <img class="item-c" src="https://i.imgur.com/i5pA4y6.jpg?1" alt="callum">
-          <img class="item-d" src="https://i.imgur.com/VYDNerh.jpg?1" alt="loch">
+          <img class="item-c" src="./images/callum.jpg" alt="callum">
+          <img class="item-d" src="./images/loch.jpg" alt="loch">
         </div>
         <div>
-          <img class="item-e" src="https://i.imgur.com/qKryISC.jpg" alt="nfl">
-          <img class="item-f" src="https://i.imgur.com/QE3r8Jt.jpg?1" alt="fleur">
+          <img class="item-e" src="./images/nfl.jpg" alt="nfl">
+          <img class="item-f" src="./images/fleur.jpg" alt="fleur">
         </div>
       </div>
       </section>
@@ -149,7 +145,7 @@
 
       <!-- Projects section -->
 
-      <section id="projects" class="projects">
+      <section class="projects">
         <div class="projectsIntroducton">
           <h2 class="myProject">My Projects</h2>
           <p>Here is a small collection of projects I have built since beginning my
@@ -159,9 +155,8 @@
         <div class="rps">
           <div>
             <a href="https://laing91.github.io/rock-paper-scissors/">
-              <img src="https://i.imgur.com/XEod9dh.jpg" alt="">
+              <img class="rps" src="./images/rps.JPG" alt="">
             </a>
-            <h4>2022 - HTML, CSS, JS - Browser Based Game</h4>
           </div>
       </section>
 

@@ -78,6 +78,7 @@ h4{
 p {
   color: white;
   font-size: min(16px, 3vw);
+  width: 75%;
 }
 
 section {
@@ -94,25 +95,37 @@ section {
  ==================================== */
 
 .navbar {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  position: absolute;
-  width: 100vw;
-  margin: 0 0 -100px;
-  top: 0;
   font-family: raleway;
-  background: rgba(0,0,0,0.3)
+  position: fixed; 
+  width: 100vw;
 }
 
-
-
 .main-nav {
-  margin-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  display: none;
+  position: absolute;
+  background: rgba(0,0,0,0.3);
+  flex-direction: column;
 }
+
+@media (min-width: 769px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  #hamburgerButton {
+    display: none;
+  }
+}
+
+.main-nav.show{
+display: flex;
+}
+
 .main-nav a {
   padding: 10px 15px;
   text-transform: uppercase;
@@ -128,13 +141,21 @@ section {
   color: #718daa;
 }
 
-.about {
-  display: flex;
-  flex-wrap: wrap;
+#hamburger{
+  display: none;
 }
 
+#hamburger:checked + div {
+  display: none;
+}
 
+/* ================================= 
+  About
+==================================== */
 
+.about {
+  min-height: 100vh;
+}
 
 
 /* ================================= 
@@ -215,6 +236,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;  
+  min-height: 100vh;
 }
 
 
@@ -230,20 +252,18 @@ section {
   flex-direction: column;
   width: 50%;
   margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
 }
 
-
-img {
-  margin-top: 20px;
-  border-radius: 3%;
+.rps {
+  object-fit: cover;
 }
 
 .projectIntro {
   color: white;
 }
-.projectIntroText {
-  color: #faeda2;
-}
+
 
 
 /* ================================= 
@@ -294,13 +314,4 @@ input[type="submit"]:hover {
   display: flex;
   border: bold white 2px;
   justify-content: center;
-}
-
-
-#hamburger{
-  display: none;
-}
-
-#hamburger:checked + div {
-  display: none;
 }
