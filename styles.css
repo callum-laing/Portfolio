@@ -25,9 +25,7 @@ body {
 }
 
 .overlay {
- /*background: rgb(93, 93, 93);
-  background: linear-gradient(140deg, rgba(93,93,93,0) 0%, rgb(255 217 133) 100%);*/
-    /* Created with https://www.css-gradient.com */
+    padding: 0 10vw;
     background: #faeda2;
     background: -webkit-radial-gradient(top right, #faeda2 0%, #FFFFFF00 60%);
     background: -moz-radial-gradient(top right, #faeda2 0%, #FFFFFF00 60%);
@@ -41,20 +39,56 @@ body {
   margin: 0 auto;
 }
 
+img{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin: 10px;
+}
+.image-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1{
+  font-size: min(4em, 15vw);
+  text-align: center;
+  margin-bottom: .3em;
+  color: #faeda2;
+  font-family: "raleway";
+}
+
+
 h2 {
   color: white;
-  font-size: 2rem;
+  font-size: min(4em, 13vw);
   text-decoration: underline;
   text-decoration-color: #faeda2;
 }
 
+h4{
+  font-size: min(2em, 8vw);
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  font-family: arial;
+}
+
 p {
   color: white;
+  font-size: min(16px, 3vw);
 }
 
 section {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  min-height: 100vh;
+/*   outline: 10px solid red; */
 }
+
 /* ================================= 
    Navbar 
  ==================================== */
@@ -62,14 +96,15 @@ section {
 .navbar {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  position: sticky;
+  position: absolute;
+  width: 100vw;
+  margin: 0 0 -100px;
   top: 0;
   font-family: raleway;
+  background: rgba(0,0,0,0.3)
 }
 
-.home-nav, .projects-nav, .contact-nav, .about-nav, .skills-nav {
-  text-decoration: none;
-}
+
 
 .main-nav {
   margin-top: 5px;
@@ -93,171 +128,13 @@ section {
   color: #718daa;
 }
 
-/* ================================= 
-  Media Queries
-==================================== */
-
-@media (min-width: 769px) {
-  .main-nav {
-    display: flex;
-  }
-  .header {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .skill,
-  .intro {
-    margin-left: 20px;
-  }
-  .icons {
-    margin-left: 50px;
-  }
-  .about {
-    margin-top: 30vh;
-  }
-}
-
-@media (min-width: 1025px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 769px) {
-  .home {
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 600px;
-    margin-top: 15vh;
-  }
-  .projectIntro, .aboutMe {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  h2, .rps, .projectIntro, .about  {
-    display: flex;
-    justify-content: center;
-  } 
-  .aboutMe {
-    max-width: 95vw;
-    padding-right: 30px;
-    text-align: center;
-  }
-  .about {
-    margin-top: 40vh;
-  }
-  .projects {
-    text-align: center;
-  }
-}
-
-
-/* ================================= 
-  Home
-==================================== */
-.home {
-  display: flex;
-  justify-content: center;
-  font-size: clamp(1rem, 5em, 3rem);
-  color: #faeda2;
-  margin-bottom: 0;
-  padding-top: 15vh;
-  font-family: "raleway";
-}
-
-.intro {
-  display: flex;
-  flex-direction: column;
-}
-
-#callum {
-  margin-bottom: 0;
-}
-
-#job-title {
-  display: flex;
-  justify-content: center;
-  color: white;
-  margin-top: 0;
-  font-family: arial;
-  font-size: 0.5em;
-}
-
-
-/* ================================= 
-  About
-==================================== */
-
-
 .about {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.75fr 1fr;
-  padding-top: 20vh;
-  width: min(95%, 75rem);
-  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.grid-col-span-2 {
 
-  grid-column: 1/3;
-}
 
-.grid-row-span {
-  grid-row: 1/3;
-}
-
-.item-a {
-  margin-bottom: 100px;
-}
-.item-e {
-  grid-column: 3/4;
-}
-
-.item-c,
-.item-d,
-.item-e,
-.item-f {
-  width: 20vh;
-  height: 20vh;
-  border-radius: 50%;
-  align-self: flex-start;
-  justify-self: center;
-}
-.item-c,
-.item-d {
-  align-self: flex-end;
-}
-
-@media (max-width: 750px) {
-  .about {
-    padding-top: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-
-  .item-b {
-    text-align: center;
-  }
-  .item-c {
-    grid-row: 3;
-  }
-  .item-d {
-    grid-row: 3;
-    grid-column: 2/3;
-  }
-
-  .item-e {
-    grid-row: 4;
-    grid-column: 1;
-  }
-  .grid-col-span-2 {
-    grid-column: 1/3;
-  }
-}
 
 
 /* ================================= 
@@ -302,11 +179,6 @@ section {
   color: black;
 }
 
-h2 {
-  font-size: 3rem;
-}
-
-h3,
 .skills p {
   font-weight: lighter;
 }
@@ -342,9 +214,7 @@ h3,
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  
+  flex-direction: column;  
 }
 
 
@@ -358,7 +228,6 @@ h3,
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 20vh;
   width: 50%;
   margin: 0 auto;
 }
@@ -376,11 +245,6 @@ img {
   color: #faeda2;
 }
 
-h4 {
-  display: flex;
-  text-align: center;
-  color: white;
-}
 
 /* ================================= 
   Contact
@@ -430,4 +294,13 @@ input[type="submit"]:hover {
   display: flex;
   border: bold white 2px;
   justify-content: center;
+}
+
+
+#hamburger{
+  display: none;
+}
+
+#hamburger:checked + div {
+  display: none;
 }
