@@ -79,7 +79,6 @@ section {
   align-items: center;
   flex-direction: column; 
   min-height: 100vh;
-/*   outline: 10px solid red;  */
 }
 
 /* ================================= 
@@ -235,6 +234,10 @@ display: flex;
 
 .rps {
   object-fit: cover;
+}
+
+.rps:hover {
+  animation: shake;
 }
 
 
