@@ -200,6 +200,10 @@ img {
   height: 100px;
   width: 100px;
   object-fit: cover;
+} 
+.about {
+min-height: 100vh;
+padding-top: 60vh;
 }
 }
 /* ================================= 
