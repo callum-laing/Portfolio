@@ -127,6 +127,12 @@ section {
   }
 }
 
+@media (max-width: 769px) {
+  a:hover {
+    width: 100%;
+  }
+}
+
 .main-nav.show{
 display: flex;
 }
