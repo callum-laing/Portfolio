@@ -44,6 +44,7 @@ h1{
   font-size: min(4em, 15vw);
   text-align: center;
   margin-bottom: .3em;
+  margin-top: -20vh;
   color: #faeda2;
   font-family: "raleway";
 }
@@ -78,7 +79,6 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column; 
-  min-height: 100vh;
 }
 
 /* ================================= 
@@ -174,6 +174,16 @@ button:hover {
 }
 
 /* ================================= 
+   FirstPage
+ ==================================== */
+.intro {
+  min-height: 100vh;
+}
+
+
+
+
+/* ================================= 
   About
 ==================================== */
 
@@ -182,6 +192,9 @@ button:hover {
   margin: 0 auto;
 }
 
+#about {
+  padding-top: 30px;
+}
 img{
   height: 200px;
   width: 200px;
@@ -211,6 +224,7 @@ padding-top: 60vh;
 
 .mySkills {
 display: flex;
+min-height: 100vh;
 }
 
 .skillIcon {
