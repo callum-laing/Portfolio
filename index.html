@@ -1,143 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-<!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
-<link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
-<!-- Icons -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-<script src="https://kit.fontawesome.com/813177f008.js" crossorigin="anonymous"></script>
-<!-- Libraries -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!-- Stylesheet  -->
-<link rel="stylesheet" href="./styles/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/813177f008.js" crossorigin="anonymous"></script>
+    <!-- Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Stylesheet  -->
+    <link rel="stylesheet" href="./styles/style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/096e06f517.js" crossorigin="anonymous"></script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
 
 <body>
-      <nav class="navbar">
-        <button onclick="toggleNavbar()" id="hamburgerButton">MENU</button>
-        <div class="main-nav">
-          <a href="#top" class="home-nav"><i class="fa fa-fw fa-home"></i>Home</a>
-          <a href="#about" class="about-nav"><i class="fa fa-fw fa-address-book"></i>About</a>
-          <a href="#skills" class="skills-nav"><i class="fa fa-fw fa-laptop"></i>Skills</a>
-          <a href="#projects" class="projects-nav"><i class="fa fa-fw fa-code"></i>Projects</a>
-          <a href="#contact" class="contact-nav"><i class="fa fa-fw fa-envelope"></i>Contact</a>
-        </div>
-      </nav>
   <div class="mainContainer">
     <div class="overlay">
-
-      <!-- Home section -->
-
-      <div class="container">
-        <section class="intro">
-            <h1>Hello, I'm Callum.</h1>
-            <h4>Front-End Web Developer</h4>
-        </section>
-
-        <!-- About section -->
-
-        
-        <section class="about">
-          <h2 id="about">About Me</h2>
-          <p class="item-b ">I'm a Front-End Developer in Cambridge, UK.
-            I have a passion for creating intuitive, dynamic and responsive user experiences.
-            <br>
-            <br>
-            I don't just code! I play American Football for the Cambridgeshire Cats,
-            I love hiking, watching TV series (I have a weak spot for Kdramas and Anime)
-            and am full time dad to a very fluffy Yorkshire Terrier.
-          </p>
-      <div class="image-container">
-        <div>
-          <img class="item-c" src="./images/callum.jpg" alt="callum">
-          <img class="item-d" src="./images/loch.jpg" alt="loch">
+    <nav class="navbar">
+        <button onclick="toggleNavbar()" id="hamburgerButton">MENU</button>
+        <div class="main-nav">
+            <a href="#top" class="home-nav"><i class="fa fa-fw fa-home"></i>Home</a>
+            <a href="#about" class="about-nav"><i class="fa fa-fw fa-address-book"></i>About</a>
+            <a href="#skills" class="skills-nav"><i class="fa fa-fw fa-laptop"></i>Skills</a>
+            <a href="#projects" class="projects-nav"><i class="fa fa-fw fa-code"></i>Projects</a>
+            <a href="#contact" class="contact-nav"><i class="fa fa-fw fa-envelope"></i>Contact</a>
         </div>
-        <div>
-          <img class="item-e" src="./images/nfl.jpg" alt="nfl">
-          <img class="item-f" src="./images/fleur.jpg" alt="fleur">
+    </nav>
+
+
+            <!-- Home section -->
+
+            <section class="home" id="home">
+                <div class="container">
+                    <h1>Hello, I'm Callum.</h1>
+                    <h4>Front-End Web Developer</h4>
+                </div>
+            </section>
         </div>
-      </div>
-      </section>
-
-      <!-- Skills section -->
-      <section class="mySkills" id="skills">
-          <h2>My Skills</h2>
-          <div><span aria-hidden="true" class="skillIcon devicons devicons devicons-html5" title="HTML5"></span>
-              <span aria-hidden="true" class="skillIcon devicons devicons-css3" title="CSS"></span>
-              <span aria-hidden="true" class="skillIcon devicons devicons-javascript_badge" title="JavaScript & ES6"></span>
-              <span aria-hidden="true" class="skillIcon devicons devicons-responsive" title="Responsive Design"></span>                
-              <span aria-hidden="true" class="skillIcon devicons devicons-git" title="Git"></span>
-              <span aria-hidden="true" class="skillIcon devicons devicons-terminal_badge" title="Terminal"></span>
-              </div>
-      </section>
-
-      <!-- Projects section -->
-
-      <section class="projects" id="projects">
-          <h2>My Projects</h2>
-
-
-        <div class="rps">
-          <div>
-            <a href="https://laing91.github.io/rock-paper-scissors/">
-              <img class="rps" src="./images/rps.JPG" alt="">
-            </a>
-          </div>
-      </section>
-
-      <!-- Contact section-->
-
-      <div class="contact" id="contact">
-        <form action="https://formspree.io/f/xknykdjb" method="POST">
-
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name.." class:required>
-
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.." class:required>
-
-          <label for="email">Email</label>
-          <input type="text" id="" email" name="email" placeholder="Your email..." class:required>
-          </select>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-
-          <input type="submit" value="Submit">
-
-        </form>
-      </div>
-
-      <script src="app.js"></script>
     </div>
-  </div>
-</body>
+            
+            <!-- About section -->
 
+
+            <section class="about" id="about">
+                <div class="container">
+                    <h2 class="aboutH2">About Me</h2>
+                    <p class="item-b ">I'm a Front-End Developer in Cambridge, UK.
+                        I have a passion for creating intuitive, dynamic and responsive user experiences.
+                        <br>
+                        <br>
+                        I don't just code! I play American Football for the Cambridgeshire Cats,
+                        I love hiking, watching TV series (I have a weak spot for Kdramas and Anime)
+                        and am full time dad to a very fluffy Yorkshire Terrier.
+                    </p>
+                    <div class="image-container">
+                        <div>
+                            <img class="item-c" src="./images/callum.jpg" alt="callum">
+                            <img class="item-d" src="./images/loch.jpg" alt="loch">
+                        </div>
+                        <div>
+                            <img class="item-e" src="./images/nfl.jpg" alt="nfl">
+                            <img class="item-f" src="./images/fleur.jpg" alt="fleur">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills section -->
+            <section class="mySkills" id="skills">
+                <div class="container">
+                    <h2 class="skillsH2">My Skills</h2>
+                    <ul class="skills-container">
+
+                      <li class="skills-title">
+                          <span aria-hidden="true" class="devicons devicons devicons-html5" title="HTML5"></span>
+                          <p>HTML5</p>
+                      </li>
+  
+                      <li class="skills-title">
+                          <span aria-hidden="true"  class="devicons devicons-css3" title="CSS"></span>
+                          <p>CSS</p>
+                      </li>
+  
+                      <li class="skills-title">
+                          <span aria-hidden="true" class="devicons devicons-javascript_badge" title="JavaScript & ES6"></span>
+                          <p>JavaScript</p>
+                      </li>
+                    </ul>
+                  </div>
+            </section>
+
+            <!-- Projects section -->
+
+            <section class="projects" id="projects">
+                <div class="container">
+                    <h2>My Projects</h2>
+
+
+                    <div class="rps">
+                        <div class="container">
+                                <img class="rps" src="./images/rps.JPG" alt="">
+                        </div>
+                    </div>
+            </section>
+
+
+
+            <!-- Contact section-->
+            <section id="contact">
+              <h2 class="contactH2">CONTACT ME!</h2>
+                <div class="contact">
+                    <form action="https://formspree.io/f/xknykdjb" method="POST">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." class:required>
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." class:required>
+
+                        <label for="email">Email</label>
+                        <input type="text" id="" email" name="email" placeholder="Your email..." class:required>
+                        </select>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write something.."
+                            style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+            </section>
+
+            <script src="app.js"></script>
+</body>
 </html>
