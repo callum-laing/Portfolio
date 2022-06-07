@@ -125,13 +125,13 @@
             <section class="projects" id="projects">
                 <div class="container">
                     <h2>My Projects</h2>
-
-
-                    <div class="rps">
-                        <div class="container">
-                                <img class="rps" src="./images/rps.JPG" alt="">
-                        </div>
-                    </div>
+                            <div class="projectOne">
+                                <img onClick="rps()" class="rps" src="./images/rps.JPG" alt="">
+                            </div>
+                            <div class="projectTwo">
+                                <img onClick="githubApp()"class="githubApp" src="./images/GithubApp.JPG" alt="">
+                            </div>
+                </div>
             </section>
 
 
@@ -139,7 +139,7 @@
             <!-- Contact section-->
             <section id="contact">
               <h2 class="contactH2">CONTACT ME!</h2>
-                <div class="contact">
+                <div class="contactForm">
                     <form action="https://formspree.io/f/xknykdjb" method="POST">
 
                         <label for="fname">First Name</label>
@@ -149,7 +149,7 @@
                         <input type="text" id="lname" name="lastname" placeholder="Your last name.." class:required>
 
                         <label for="email">Email</label>
-                        <input type="text" id="" email" name="email" placeholder="Your email..." class:required>
+                        <input type="text" id="email"  name="email" placeholder="Your email..." class:required>
                         </select>
 
                         <label for="message">Message</label>

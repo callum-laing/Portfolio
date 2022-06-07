@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #f2f2f2;;
 }
 
 .mainContainer {
@@ -162,7 +163,6 @@ button:hover {
  ==================================== */
 
  .home {
-   background-color: white;
    min-height: 100vh;
 }
 
@@ -189,10 +189,11 @@ img {
   width: 200px;
   object-fit: cover;
   margin: 10px;
-  border: 6px solid white;
-  border-radius: 50%;
-  
+  border-radius: 10%;
+  box-shadow: 0 0 3px 4px black;
 }
+
+
 .image-container {
   display: flex;
   flex-wrap: wrap;
@@ -248,6 +249,8 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: #f2f2f2;
+
 }
 
 .skills h2 span {
@@ -301,14 +304,29 @@ h3,
   background-color: #EB9486;
 }
 
-.rps {
-  object-fit: cover;
+.projectOne img {
+  transition: 0.5s all ease-in-out;
 }
 
+.projectOne:hover img {
+  transform: scale(1.10);
+  border-radius: 10%;
+}
+
+.projectTwo img {
+  transition: 0.5s all ease-in-out;
+}
+
+.projectTwo:hover img {
+  transform: scale(1.10);
+  border-radius: 10%;
+}
 
 /* ================================= 
   Contact
 ==================================== */
+
+
 .contactH2 {
   color: black;
   margin-bottom: 0;
@@ -344,7 +362,7 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-.contact {
+.contactForm {
   border-radius: 5px;
   max-width: 600px;
   margin: 0 auto;

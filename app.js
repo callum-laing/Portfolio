@@ -18,3 +18,11 @@ function hideNav(e) {
   x.classList.remove("show");
   window.removeEventListener("click", hideNav)
 }
+
+function rps() {
+  location.href = "https://laing91.github.io/rock-paper-scissors/";
+}
+
+function githubApp() {
+  location.href = "https://laing91.github.io/GithubApp/";
+}
