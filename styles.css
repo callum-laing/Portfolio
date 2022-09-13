@@ -210,85 +210,41 @@ img {
 /* ================================= 
   Skills
 ==================================== */
-.skills-container,
-.skills-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 
-.skills-title {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.skills-container,
-.skills-title {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills-container,
-.skills-title {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.skillsH2 {
-  text-decoration: underline;
-  text-decoration-color: #EB9486;
-  text-align: center;
+.mySkills {
+  margin: 0 auto;
 }
 
 
-.skillsContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #f2f2f2;
-
+.skills-skills {
+  width: 90%;
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  row-gap: 2.5rem;
+  column-gap: 1rem;
+  padding-top: 100px;
+  list-style: none;
 }
 
-.skills h2 span {
-  -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
-          box-shadow: inset 0px -5px 0px 0px #FFA818;
+.skills-image {
+  height:100px;
+  width: 100px;
 }
 
-h3,
-.skills p {
-  font-weight: lighter;
+.skills-image:hover {
+  animation: rotation 3s linear;
 }
 
-.skills-container {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 6% auto;
-}
-
-.skills-title {
-  -ms-flex-preferred-size: 23%;
-      flex-basis: 23%;
-  margin: 10px;
-  padding: 10px;
-}
-
-.skills-title span {
-  font-size: 6.5rem;
-}
-
-.skills-title span:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  color: #FFA818;
-}
-
-.skills-title p {
-  text-align: center;
-  font-size: 1.5rem;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 /* ================================= 
