@@ -215,6 +215,9 @@ img {
   margin: 0 auto;
 }
 
+.skills-title {
+  text-decoration-color: #EB9486;
+}
 
 .skills-skills {
   width: 90%;
