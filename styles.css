@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth;
   letter-spacing: 1.5px;
 }
- 
+
 body {
   margin: 0;
   padding: 0;
@@ -288,7 +288,9 @@ img {
   justify-content: center;
 }
 
-
+.projectText {
+  text-align: center;
+}
 .projectContainer {
   display: flex;
   justify-content: space-evenly;
@@ -316,19 +318,24 @@ width: 80%;
   width: 60%;
 }
 
+.projectThree img {
+  transition: 0.5s all ease-in-out;
+  height: 300px;
+  width: 400px;
+  flex: 1;
+  cursor: pointer;
+} .projectTwoText {
+  width: 60%;
+}
+
 @media (max-width: 756px) {
   .projectContainer {
     flex-direction: column;
     justify-content: center;
-  } .projectOne img, .projectTwo img {
+  } .projectOne img, .projectTwo img, .projectThree img {
     height: 100px;
     width: 100px;
-  } .projectOne {
-    padding-left: 30%;
-  } 
-  }.projectTwo {
-    padding-left: 30%;
-  } 
+  }
 
   .skills-image {
     height: 20px;
@@ -385,5 +392,4 @@ a{
   } .contactH2, .contactText, .email-link {
     align-self: center;
     text-align: center;
-  }
-}
+  }};
