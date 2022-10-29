@@ -26,3 +26,7 @@ function rps() {
 function githubApp() {
   location.href = "https://laing91.github.io/GithubApp/";
 }
+
+function LATracker() {
+  location.href = "https://laing91.github.io/first-crud-app/";
+}
