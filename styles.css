@@ -248,29 +248,7 @@ img {
   Skills
 ==================================== */
 
-.mySkills {
-  margin: 0 auto;
-}
 
-
-
-.skills-image {
-  height:50px;
-  width: 50px;
-}
-
-.skills-image:hover {
-  animation: rotation 3s linear;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
 
 /* ================================= 
   Projects
