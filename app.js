@@ -19,14 +19,14 @@ function hideNav(e) {
   window.removeEventListener("click", hideNav)
 }
 
-function rps() {
+function project1() {
   location.href = "https://laing91.github.io/rock-paper-scissors/";
 }
 
-function githubApp() {
+function project2() {
   location.href = "https://laing91.github.io/GithubApp/";
 }
 
-function LATracker() {
+function project3() {
   location.href = "https://laing91.github.io/first-crud-app/";
 }
