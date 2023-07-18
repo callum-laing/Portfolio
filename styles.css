@@ -147,6 +147,7 @@ section {
 
 button {
   color: black;
+  cursor: pointer;
   width: 20vw;
   height: 5vh;
   transition-duration: 0.4s;
@@ -155,6 +156,32 @@ button {
   border: none;
   background: rgba(0, 0, 0, 0.2);
   color: #000000;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: inherit;
+  line-height: 0.5;
+  border-radius: 5px;
+  background: #1c1c1c;
+  padding: 0.5em 1.5em;
+  color: white;
+  outline: 2px solid #2694e8;
+  border: 2px solid #2694e8;
+  outline-offset: -2px;
+  transition: outline-offset 100ms ease;
+}
+
+.btn:hover,
+.btn:focus {
+  outline-offset: 2px;
+  color: white;
+  outline: 3px solid #2694e8;
+  border: 2px solid #2694e8;
+  background: #1c1c1c;
+  ;
 }
 
 /* ================================= 
@@ -275,35 +302,16 @@ img {
 .project-card {
   background-color: #2e2d2d;
   text-align: center;
-  padding: 2rem;
   border-radius: 10px;
+  padding: 2rem;
 }
 
 .project-card img {
-  max-width: 100%;
-  margin-bottom: 1.5rem;
+  min-width: 90%;
+  border-radius: 0px;
+  object-fit: fill;
 }
 
-.project-tag {
-  font-weight: bold;
-  color: #5c9cf0;
-}
-
-.project-tag:hover {
-  color: #162f45;
-}
-
-.project-grid button {
-  background-color: #162f45;
-  color: #fafafa;
-  border-radius: 10px;
-  width: 50%;
-  font-size: 1rem;
-}
-
-.project-grid button:hover {
-  background-color: #5c9cf0;
-}
 
 /* ================================= 
   Contact
@@ -384,27 +392,13 @@ img {
 .contactContainer textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  background-color: #2e2d2d;
   border-radius: 4px;
   resize: vertical;
+  color: white;
 }
 
 .contactContainer label {
   font-weight: bold;
-}
-
-.contactContainer button {
-  display: block;
-  width: 50%;
-  padding: 10px;
-  margin-top: 20px;
-  background-color: #162f45;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.contactContainer button:hover {
-  background-color: #5c9cf0;
+  font-family: raleway;
 }
