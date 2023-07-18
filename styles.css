@@ -69,7 +69,6 @@ section {
   min-height: 100vh;
 }
 
-
 /* ================================= 
    Navbar 
  ==================================== */
@@ -139,6 +138,11 @@ section {
 
 #hamburger:checked+div {
   display: none;
+}
+
+.nav-btn {
+  color: white;
+  background-color: #1c1c1c;
 }
 
 button {
@@ -240,12 +244,9 @@ img {
   Skills
 ==================================== */
 
-
-
 /* ================================= 
   Projects
 ==================================== */
-
 
 .container {
   max-width: 1200px;
@@ -259,8 +260,16 @@ img {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 20px;
+}
+
+@media (max-width: 769px) {
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .project-card {
@@ -284,7 +293,6 @@ img {
   color: #162f45;
 }
 
-
 .project-grid button {
   background-color: #162f45;
   color: #fafafa;
@@ -302,18 +310,74 @@ img {
 ==================================== */
 
 
+.contact-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 769px) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .contactContainer {
-  max-width: 30%;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #2e2d2d;
+  padding: 10px;
   border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.socials {
+  grid-area: socials;
+  padding: 1rem;
+}
+
+.socials-title,
+.social-link {
+  font-family: raleway;
+  font-weight: 900;
+}
+
+.contact-title {
+  grid-area: title;
+  place-self: center;
+}
+
+@media (max-width: 769px) {
+  .contactContainer {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .contactContainer h2 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.github,
+.linkedin {
+  display: flex;
+  align-items: center;
+}
+
+.social-svg {
+  width: 40px;
+  height: 40px;
+  fill: white;
+  margin-right: 5px;
+}
+
+.social-link:visited,
+.social-link:active {
+  color: #2694e8;
+}
+
+.social-link:hover {
+  color: white;
 }
 
 .contactContainer input[type="text"],
@@ -331,11 +395,10 @@ img {
 
 .contactContainer button {
   display: block;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   margin-top: 20px;
   background-color: #162f45;
-  ;
   color: #ffffff;
   border: none;
   border-radius: 4px;
