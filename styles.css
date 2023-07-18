@@ -36,20 +36,11 @@ h1 {
 
 h2 {
   font-size: min(3em, 10vw);
+  font-family: raleway;
 }
 
 h3 {
   text-decoration: none;
-  border-bottom: 1px solid #5c9cf0;
-}
-
-h4 {
-  font-size: min(1.5em, 5vw);
-  text-align: left;
-  font-family: arial;
-  text-decoration: underline;
-  text-decoration-color: #cae7b9;
-  text-decoration-thickness: 5px;
 }
 
 p {
@@ -184,14 +175,21 @@ button {
   ;
 }
 
-/* ================================= 
-   FirstPage
- ==================================== */
 .name-title {
-  font-size: 1.25em;
+  font-size: 1.3em;
   font-family: "Kaushan Script", cursive;
   color: #2694e8;
 }
+
+.page-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+/* ================================= 
+   FirstPage
+ ==================================== */
 
 .home-container {
   display: flex;
@@ -230,7 +228,7 @@ img {
   width: 125px;
   object-fit: cover;
   margin: 10px;
-  border-radius: 10%;
+  border-radius: 5px;
   box-shadow: 0 0 2px 2px #5c9cf0;
 }
 
@@ -280,10 +278,6 @@ img {
   margin: 0 auto;
 }
 
-.projects h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-}
 
 .project-grid {
   display: grid;
@@ -302,14 +296,20 @@ img {
 .project-card {
   background-color: #2e2d2d;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2rem;
 }
 
 .project-card img {
   min-width: 90%;
-  border-radius: 0px;
+  border-radius: 5px;
   object-fit: fill;
+}
+
+@media (max-width: 769px) {
+  .project-card img {
+    min-width: 50%;
+  }
 }
 
 
@@ -354,6 +354,12 @@ img {
 }
 
 @media (max-width: 769px) {
+  .contact-title {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 769px) {
   .contactContainer {
     height: 50%;
     width: 100%;
@@ -361,10 +367,6 @@ img {
   }
 }
 
-.contactContainer h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
 .github,
 .linkedin {
