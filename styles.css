@@ -50,6 +50,7 @@ p {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 section {
@@ -331,11 +332,6 @@ img {
   }
 }
 
-.contactContainer {
-  padding: 10px;
-  border-radius: 4px;
-  max-width: 400px;
-}
 
 .socials {
   grid-area: socials;
@@ -359,17 +355,12 @@ img {
   }
 }
 
-@media (max-width: 769px) {
-  .contactContainer {
-    height: 50%;
-    width: 100%;
-    object-fit: cover;
-  }
-}
 
 
 .github,
-.linkedin {
+.linkedin,
+.mailme,
+.resume {
   display: flex;
   align-items: center;
 }
@@ -377,30 +368,15 @@ img {
 .social-svg {
   width: 40px;
   height: 40px;
-  fill: white;
+  fill: #2694e8;
   margin-right: 5px;
 }
 
 .social-link:visited,
 .social-link:active {
-  color: #2694e8;
+  color: white;
 }
 
 .social-link:hover {
-  color: white;
-}
-
-.contactContainer input[type="text"],
-.contactContainer textarea {
-  width: 100%;
-  padding: 10px;
-  background-color: #2e2d2d;
-  border-radius: 4px;
-  resize: vertical;
-  color: white;
-}
-
-.contactContainer label {
-  font-weight: bold;
-  font-family: raleway;
+  color: #2694e8;
 }
